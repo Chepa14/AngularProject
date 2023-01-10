@@ -1,0 +1,27 @@
+@import '~material-icons/iconfont/material-icons.css';
+
+.pageHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.emptyList p {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.products_container {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  background-color: lightgray;
+  border-radius: 5px;
+  font-size: 21px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,9 @@
+<div class="pageHeader">
+  <h3> Product details </h3>
+</div>
+<div *ngIf="product" class="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price }}</h4>
+  <p>{{ product.description }}</p>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

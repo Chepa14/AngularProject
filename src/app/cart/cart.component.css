@@ -1,0 +1,10 @@
+@import '~material-icons/iconfont/material-icons.css';
+
+.cart {
+  padding: 20px;
+  color: white;
+}
+
+.cart :hover {
+  color: #fff9;
+}

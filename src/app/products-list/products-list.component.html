@@ -1,0 +1,28 @@
+<div class="pageHeader">
+  <h3> Products list </h3>
+</div>
+<div *ngIf="products; else noProductsComponent">
+  <div *ngFor="let product of products" class="products_container">
+    <div class="product">
+      <h3>
+        <a
+          style="display: flex; flex-wrap: wrap"
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]">
+          <span>{{ product.name }}</span>
+          <app-product-alerts
+            [product]="product"
+            (notify)="onNotify()">
+          </app-product-alerts>
+        </a>
+        <p *ngIf="product.description" style="color: gray; font-size: 15px">{{ " | " + product.description }}</p>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<ng-template #noProductsComponent>
+  <div class="emptyList">
+    <p> It's empty here... </p>
+  </div>
+</ng-template>
